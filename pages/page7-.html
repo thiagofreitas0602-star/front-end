@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Trocar imagem</title>
+</head>
+<body>
+    <h2>Exemplo de troca de imagem</h2>
+    
+    <img id="im1" 
+         src="https://gstatic.com" 
+         style="width:100px;"><br><br>
+
+    <button style="color:blue" onclick="trocarImagem()">Trocar imagem</button>
+
+    <script>
+        function trocarImagem() {
+            document.getElementById("im1").src = "https://senac.br";
+        }
+    </script>
+</body>
+</html>

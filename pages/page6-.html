@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Aula 1 - JS</title>
+</head>
+<body>
+    <h1>VARIAVEIS</h1>
+
+    <script>
+        // 1. Criando e alimentando as variáveis com dados do usuário
+        let nome = prompt("Digite o seu nome:");
+        let idade = parseInt(prompt("Digite a sua idade:"));
+        let peso = parseFloat(prompt("Digite o seu peso (ex: 75.5):"));
+        let altura = parseFloat(prompt("Digite a sua altura em metros (ex: 1.75):"));
+
+        // 2. Exibindo as informações coletadas no console do navegador
+        console.log("--- Ficha da Pessoa ---");
+        console.log("Nome: " + nome);
+        console.log("Idade: " + idade + " anos");
+        console.log("Peso: " + peso + " kg");
+        console.log("Altura: " + altura + " m");
+
+        // 3. Exibindo um resumo em uma caixa de alerta na tela
+        alert("Cadastro realizado com sucesso!\n\n" + nome + " tem " + idade + " anos, pesa " + peso + " kg e mede " + altura + " m.");
+    </script>
+</body>
+</html>
