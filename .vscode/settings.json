@@ -1,0 +1,9 @@
+{
+    "livePreview.defaultPreviewPath": "/index.html",
+    "chat.tools.terminal.autoApprove": {
+        "/^cd \"/home/carlos/Projetos/onedrive/obsidian/faculdade/2º Semestre/DESENVOLVIMENTO FRONT-END/front-end\" && mkdir -p assets/css assets/js pages && mv page1\\.html page2\\.html page3\\.html forms\\.html tables\\.html pages/ && mv style\\.css assets/css/style\\.css && ls -R$/": {
+            "approve": true,
+            "matchCommandLine": true
+        }
+    }
+}

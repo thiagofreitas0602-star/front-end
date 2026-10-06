@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>TQDC Coporation ©</title>
+
+    <link rel="stylesheet"
+          href="../assets/css/style.css">
+
+    <script src="https://code.iconify.design/iconify-icon/3.0.0/iconify-icon.min.js"></script>
+    <script src="../assets/js/script.js"></script>
+
+</head>
+
+<body>
+
+    <div class="sidebar"></div>
+<main class="conteudo">
+
+        <h1> Construindo um Formulário</h1>
+    
+    <form method="get">
+
+        <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" placeholder="Digite seu Nome"><br><br>
+
+        <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Digite seu Email"><br><br>
+
+        <label for="senha">Senha:</label>
+            <input type="password" id="senha" name="senha" placeholder="Digite sua Senha" required><br><br>
+
+        <label for="idade">Idade:</label>
+            <input type="number" id="idade" name="idade" min="0" max="120"><br><br>
+
+        <label for="data">Data:</label>
+            <input type="date" id="data" name="data"><br><br>
+            
+        <label for="termos">
+            <input type="checkbox" id="termos" name="termos">
+            Aceito os termos e condições
+            
+        </label><br><br>
+
+        <label for="turno" required>Informe o Turno:</label>
+            <input type="radio" name="turno" value="matutino">Manhã</option>
+            <input type="radio" name="turno" value="vespertino">Tarde</option>
+            <input type="radio" name="turno" value="noturno">Noite</option><br><br>
+        
+        <label for="curso">Selecione o Curso:</label>
+            <select id="curso" name="curso">
+                <option value="selecionar">Selecione</option>
+                <option value="python">Python</option>
+                <option value="html">HTML</option>
+                <option value="css">CSS</option>
+                <option value="javascript">JavaScript</option>
+            </select><br><br>
+
+        <label for="mensagem">Mensagem:</label><br><br>
+            <textarea id="mensagem" name="mensagem" rows="5" cols="50"></textarea><br><br>
+        
+        <!--<label for="busca">Pesquisar</label>-->
+        <input type="text" id="busca" name="busca">
+            <form method="get">
+            <button type="submit">Pesquisar</button><br><br>
+        
+        <!--<label for="cadastro">Cadastrar</label>-->
+        <form action="/cadastro" method="post">
+            <input type="text" name="Nome">
+            <button type="submit">Cadastrar</button><br><br>
+
+        <button type="submit">Enviar</button>
+        <button type="reset">Limpar</button><br><br>
+        
+        <!--Arquivo JavaScript-->
+        <button type="button" onclick="mostrarMensagem()">Clique Aqui</button>
+        
+        <!--
+        JavaScript Incorporado no HTML
+        <script>
+            function mostrarMensagem() {
+                alert("Você clicou no botão direitinho!");
+            }
+        </script>
+        -->
+
+
+
+        </form>
+
+    </form>
+    
+
+    </main>
+
+
+
+
+</body>
+
+</html>
