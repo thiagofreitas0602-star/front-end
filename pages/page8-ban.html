@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<body style="background-color:#87CEEB">
+  <script>
+    let dt = new Date();
+    let dataFormatada = dt.toLocaleDateString('pt-BR');
+    let horaFormatada = dt.toLocaleTimeString('pt-BR', { hour: '2-digit', minute: '2-digit' });
+
+    document.write("<p> Hoje é " + dataFormatada + " às " + horaFormatada + "</p>");
+
+    let time = dt.getHours();
+    if (time < 12) {
+        document.write("<strong>Bom dia!</strong>");
+    } else if (time >= 12 && time < 18) {
+        document.write("<strong>Boa tarde!</strong>");
+    } else {
+        document.write("<strong>Boa noite!</strong>");
+    }
+  </script>
+</body>
+</html>

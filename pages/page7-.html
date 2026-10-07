@@ -1,22 +1,55 @@
+html
 <!DOCTYPE html>
 <html>
 <head>
     <meta charset="UTF-8">
     <title>Trocar imagem</title>
 </head>
-<body>
-    <h2>Exemplo de troca de imagem</h2>
-    
-    <img id="im1" 
-         src="https://gstatic.com" 
-         style="width:100px;"><br><br>
 
-    <button style="color:blue" onclick="trocarImagem()">Trocar imagem</button>
+<body>
+
+    <h2>Exemplo de troca de imagem</h2>
+
+    <img 
+        id="im1"
+        src="https://img.a.transfermarkt.technology/portrait/big/28003-1771694720.jpg?lm=4711"
+        style="width:100px;"
+    >
+
+    <br><br>
+
+    <button onclick="trocarImagem()">
+        Trocar imagem
+    </button>
 
     <script>
+
+        // Controla qual imagem está sendo exibida
+        let imagemAtual = 1;
+
         function trocarImagem() {
-            document.getElementById("im1").src = "https://senac.br";
+
+            // Se estiver mostrando a imagem 1
+            if (imagemAtual == 1) {
+
+                document.getElementById("im1").src =
+                    "https://upload.wikimedia.org/wikipedia/commons/1/1a/Bandeira_po%C3%A7o_branco.png?utm_source=pt.wikipedia.org&utm_campaign=index&utm_content=original";
+
+                // Agora a imagem atual passa a ser a 2
+                imagemAtual = 2;
+
+            } else {
+
+                // Volta para a imagem 1
+                document.getElementById("im1").src =
+                    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKrNuRaHAeRyc50pzk5jBFBvuLUKLvJ3ZRmTVCdCrqAzHrYJh1aJQ1VQJk&s=10";
+
+                // Agora a imagem atual passa a ser a 1
+                imagemAtual = 1;
+            }
         }
+
     </script>
+
 </body>
 </html>

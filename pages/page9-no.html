@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<body style="background-color:#87CEEB">
+    <button id="meuBotao">Clique aqui</button>
+  <script>
+    let data = new Date();
+    let dia = data.getDay();
+
+    switch (dia) 
+    {
+      case 0:
+        document.write("Domingo: descansar, pois ninguém é de ferro!");
+        break;
+      case 1:
+        document.write("Começando a semana de trabalho...");
+        break;
+      case 5:
+        document.write("Finalmente sexta, aula de DFE e começo do fim de semana.");
+        break;
+      case 6:
+        document.write("Sábado, é hora de diversão!");
+        break;
+      default:
+        document.write("Só trabalho e estudo!");
+    }
+  </script>
+  <script>
+    let contador = 1; // Controla quantas vezes o while vai rodar
+    let somaNotas = 0; // Guarda a soma de todas as notas
+    // O loop vai rodar enquanto o contador for menor ou igual a 3
+    while (contador <= 3) {
+        // Pede a nota do aluno e converte o texto para número decimal (Float)
+        let nota = parseFloat(prompt("Digite a nota do aluno " + contador + ":"));
+        somaNotas = somaNotas + nota; // Adiciona a nota atual ao totalizador
+        contador++; // Avança para o próximo aluno (soma +1 ao contador)
+    }
+    let mediaTurma = somaNotas / 3; // Calcula a média dividindo o total por 3
+    // Exibe o resultado final com duas casas decimais
+    document.write("<p>A média das notas dos 3 alunos é: <strong>" + mediaTurma.toFixed(2) + "</strong></p>");
+  
+  document.getElementById("meuBotao").addEventListener("click", function() {
+    alert("Você clicou no botão!");
+  });
+</script>
+</body>
+</html>
